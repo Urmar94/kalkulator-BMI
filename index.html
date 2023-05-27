@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>BMI Calculator</title>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+			rel="stylesheet" />
+	</head>
+	<body>
+		<header class="header"><h1 class="headerHading">BMI Calculator</h1></header>
+		<main class="content">
+			<section class="form">
+				<article class="formItemGender">
+					<div class="formItem">Płeć:</div>
+					<label for="genderF" class="genderLabel">K</label>
+					<div class="formData">
+						<input
+							type="radio"
+							name="gender"
+							id="genderF"
+							class="genderInput"
+							value="female" />
+					</div>
+					<label for="genderM" class="genderLabel">M</label>
+					<div class="formData">
+						<input
+							type="radio"
+							name="gender"
+							id="genderM"
+							class="genderInput"
+							value="male" />
+					</div>
+				</article>
+				<article class="formItem">
+					<label for="waightInitial" class="formLabel">Obecna waga:</label>
+					<div class="formData">
+						<input
+							type="range"
+							name="waightInitial"
+							id="waightInitial"
+							class="formInput"
+							step="0.1"
+							min="50"
+							max="200" />
+						<p class="formResult">85 kg</p>
+					</div>
+				</article>
+				<article class="formItem">
+					<label for="weightDesired" class="formLabel">Docelowa waga:</label>
+					<div class="formData">
+						<input
+							type="range"
+							name="weightDesired"
+							id="weightDesired"
+							class="formInput"
+							step="0.1"
+							min="50"
+							max="200" />
+						<p class="formResult">85 kg</p>
+					</div>
+				</article>
+				<article class="formItem">
+					<label for="hight" class="formLabel">Wzrost:</label>
+					<div class="formData">
+						<input
+							type="range"
+							name="hight"
+							id="hight"
+							class="formInput"
+							step="1"
+							min="120"
+							max="230" />
+						<p class="formResult">170cm</p>
+					</div>
+				</article>
+				<article class="formItem">
+					<label for="StartDate" class="formLabel">Start:</label>
+					<div class="formData">
+						<input type="date" name="StartDate" id="StartDate" class="formInput" />
+					</div>
+				</article>
+				<article class="formItem">
+					<label for="EndDate" class="formLabel">Koniec:</label>
+					<div class="formData">
+						<input type="date" name="EndDate" id="EndDate" class="formInput" />
+					</div>
+				</article>
+				<button class="formButton" dataButton>Oblicz</button>
+			</section>
+			<section class="result">
+				<p class="resultParagraph">Chcesz schudnąć: <strong>20kg</strong>.</p>
+				<p class="resultParagraph">Obecne BMI: <strong>22.5</strong> (nadwaga).</p>
+				<p class="resultParagraph">Docelowe BMI: <strong>20.1</strong> (prawidłowa).</p>
+				<p class="resultParagraph">Musisz stracić <strong>1kg</strong> dziennie.</p>
+				<p class="resultParagraph">Musisz stracić <strong>1kg</strong> tygodniowo.</p>
+			</section>
+		</main>
+
+		<script src="./js/index.js"></script>
+		<script>
+			const app = new App();
+			app.initializeApp();
+		</script>
+	</body>
+</html>

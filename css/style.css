@@ -1,0 +1,94 @@
+:root {
+	--primery-color: #519872;
+	--primery-color--light: #bec5ad;
+	--primery-color--dark: #3b5249;
+	--secondary-color: #34252f;
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+body {
+	font-family: "Lato" sans-serif;
+	box-sizing: border-box;
+	background-color: var(--primery-color--light);
+}
+html {
+	color: var(--secondary-color);
+}
+.header {
+	max-width: 320px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.content {
+	max-width: 320px;
+	display: flex;
+	flex-direction: column;
+	margin: 50px auto;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+}
+.formItemGender {
+	display: flex;
+	flex-direction: row;
+	margin: 15px 0;
+}
+.genderLabel {
+	margin-left: 20px;
+	margin-right: 5px;
+}
+.formInput {
+	margin: 15px 0;
+	font-family: inherit;
+	font-size: inherit;
+	flex: 1;
+}
+.formData {
+	display: flex;
+	align-items: center;
+}
+.formResult {
+	margin-left: 20px;
+}
+.formButton {
+	cursor: pointer;
+	background-color: transparent;
+	color: var(--primery-color--dark);
+	border: 3px solid var(--primery-color--dark);
+	padding: 10px 20px;
+	font-size: 24px;
+	outline: none;
+	transition: background-color 0.1s ease-in, color 0.1s ease-in;
+}
+.formButton:hover {
+	background-color: var(--primery-color);
+	color: #fff;
+	border-color: var(--primery-color);
+}
+.result {
+	margin-top: 20px;
+}
+.resultParagraph {
+	padding: 2px 0;
+}
+@media (min-width: 768px) {
+	.header {
+		max-width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.content {
+		max-width: 500px;
+		display: flex;
+		flex-direction: column;
+		margin: 50px auto;
+	}
+}
