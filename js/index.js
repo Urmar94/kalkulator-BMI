@@ -24,7 +24,7 @@ class App {
 		this.addEventListeners();
 	}
 	setInitialValues() {
-		this.initialWeighInput;
+		this.initialWeighInput.value = 95;
 	}
 	addEventListeners() {}
 	handleElements() {
